@@ -16,3 +16,22 @@ function getComputerChoice () {
 
     return choice;
 }
+
+function getHumanChoice () {
+
+    let choice
+    let chosenNumber = parseInt(prompt("Choose: 1 - Rock, 2 - Paper, 3 - Scissors"));
+    if (chosenNumber === 1) {
+        choice = "rock";
+    }
+    else if (chosenNumber === 2) {
+        choice = "paper";
+    }
+    else {
+        choice = "scissors";
+    }
+
+    return choice;
+}
+
+getHumanChoice();
